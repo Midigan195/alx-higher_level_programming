@@ -6,3 +6,4 @@
 5 - Print substring
 6 - Concatenate 2 strings
 7 - Print specific substring in string
+8 - print new string from substrings
