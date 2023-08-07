@@ -7,3 +7,5 @@
 6 - Concatenate 2 strings
 7 - Print specific substring in string
 8 - print new string from substrings
+9 - Print: The zen of python
+10 - Check for cycles in a linked list
