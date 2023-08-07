@@ -2,3 +2,4 @@
 1 - Runs python code with bash
 2 - Print with escape character
 3 - Print formatted string
+4 - Print float to terminal
