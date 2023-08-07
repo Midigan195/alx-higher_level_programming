@@ -5,3 +5,4 @@
 4 - Print float to terminal
 5 - Print substring
 6 - Concatenate 2 strings
+7 - Print specific substring in string
