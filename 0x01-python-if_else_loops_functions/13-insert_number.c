@@ -19,6 +19,7 @@ listint_t *insert_node(listint_t **head, int number)
 	curr = *head;
 	if (curr == NULL)
 	{
+		printf("%i\n", number);
 		return (NULL);
 	}
 	new_node = malloc(sizeof(listint_t));
