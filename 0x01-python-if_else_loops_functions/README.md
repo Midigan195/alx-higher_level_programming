@@ -3,3 +3,4 @@
 2 - Print all letters of the alphabet
 3 - Print alphabet with exclusions
 4 - Print in hexadecimal format
+5 - Print numbers from 0 to 99
