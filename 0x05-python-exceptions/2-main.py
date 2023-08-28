@@ -4,7 +4,7 @@ safe_print_list_integers = \
 
 my_list = ['0', 1, 2, 3, 4]
 
-nb_print = safe_print_list_integers(my_list, 5)
+nb_print = safe_print_list_integers(my_list, 0)
 print("nb_print: {:d}".format(nb_print))
 
 my_list = [1, 2, 3, "School", 4, 5, [1, 2, 3]]
