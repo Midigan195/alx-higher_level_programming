@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 safe_print_list = __import__('0-safe_print_list').safe_print_list
 
-my_list = ['B', 2, 'E']
+my_list = []
 
-nb_print = safe_print_list(my_list, 300)
+nb_print = safe_print_list(my_list, 90)
 print("nb_print: {:d}".format(nb_print))
 nb_print = safe_print_list(my_list, len(my_list))
 print("nb_print: {:d}".format(nb_print))
