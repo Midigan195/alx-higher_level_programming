@@ -1,0 +1,46 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("This is a test to see what gets printed. The period should divide the lines into 2")
+This is a test to see what gets printed.
+<BLANKLINE>
+The period should divide the lines into 2
+>>> text_indentation("This is a test to see what gets printed? The period should divide the lines into 2")
+This is a test to see what gets printed?
+<BLANKLINE>
+The period should divide the lines into 2
+>>> text_indentation("This is a test to see what gets printed: The period should divide the lines into 2")
+This is a test to see what gets printed:
+<BLANKLINE>
+The period should divide the lines into 2
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+>>> text_indentation("")
+>>> text_indentation("This is a test to see what gets printed, The period should divide the lines into 2")
+This is a test to see what gets printed, The period should divide the lines into 2
+>>> text_indentation("This is a test to see what gets printed like the period should divide the lines into 2")
+This is a test to see what gets printed like the period should divide the lines into 2
+>>> text_indentation(4)
+Traceback (most recent call last):
+TypeError: text must be a string
+>>> text_indentation(".:.:?")
+.
+<BLANKLINE>
+:
+<BLANKLINE>
+.
+<BLANKLINE>
+:
+<BLANKLINE>
+?
+>>> text_indentation("Hello.         I have some good news      ")
+Hello.
+<BLANKLINE>
+I have some good news
+>>> text_indentation("      There is .a                 loT of .exTra    .Whitespace.             ")
+There is .
+<BLANKLINE>
+a                 loT of .
+<BLANKLINE>
+exTra    .
+<BLANKLINE>
+Whitespace.

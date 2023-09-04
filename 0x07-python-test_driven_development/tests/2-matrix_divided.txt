@@ -1,0 +1,30 @@
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> print(matrix_divided([[4, 6], [16, 20]], 2))
+[[2.0, 3.0], [8.0, 10.0]]
+>>> print(matrix_divided([[4.6, 6.8], [16.2, 20.0]], 2))
+[[2.3, 3.4], [8.1, 10.0]]
+>>> print(matrix_divided(2, 2))
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>> print(matrix_divided([1, 2, 3], 2))
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>> print(matrix_divided([], 2))
+[]
+>>> print(matrix_divided([[6, 8], ['j', 'c']], 2))
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>> print(matrix_divided(None))
+Traceback (most recent call last):
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+>>> print(matrix_divided([[12, 10], [6, 8]]))
+Traceback (most recent call last):
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+>>> print(matrix_divided([[4.6, 6.8], [16.2, 20.0]], 'j'))
+Traceback (most recent call last):
+TypeError: div must be a number
+>>> print(matrix_divided([[4.6, 6.8], [16.2, 20.0]], 0))
+Traceback (most recent call last):
+ZeroDivisionError: Division by zero
+>>> print(matrix_divided([[], []], 2))
+[[], []]
