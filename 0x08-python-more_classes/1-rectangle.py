@@ -55,7 +55,7 @@ class Rectangle:
         """
         Getter returns width private attribute
         """
-        return self.__height
+        return self.__width
 
     @width.setter
     def width(self, value):
