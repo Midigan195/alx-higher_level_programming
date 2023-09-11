@@ -23,3 +23,6 @@ TypeError: my_int must be an integer
 >>> bg.integer_validator("", 7.6)
 Traceback (most recent call last):
 TypeError:  must be an integer
+>>> bg.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
