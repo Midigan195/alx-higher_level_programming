@@ -30,3 +30,5 @@ Exception: area() is not implemented
 Traceback (most recent call last):
 TypeError: my_int must be an integer
 >>> BaseGeometry.integer_validator(bg, "tim", 5)
+>>> bg.integer_validator(None, 4)
+>>> bg.integer_validator(5, 4)
