@@ -15,4 +15,4 @@ def read_file(filename=""):
         defaults to empty textfile name
     """
     with open(filename, 'r', encoding="utf-8") as f:
-        print(f.read())
+        print((f.read()).strip())
