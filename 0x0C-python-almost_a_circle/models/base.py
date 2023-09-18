@@ -58,7 +58,10 @@ class Base:
         """
         Creates a new instance of a class and sets them with values
         """
-        new_instance = cls(1, 1)
+        if cls.__name__ == "Rectangle":
+            new_instance = cls(1, 1)
+        else:
+            new_instance = cls(1)
         new_instance.update(**dictionary)
         return new_instance
 
@@ -67,8 +70,9 @@ class Base:
         """
         Create a new instance from a loaded file
         """
+        fle = cls.__name__ + ".json"
         try:
-            with open(str(cls.__name__) + ".json", "r") as f:
+            with open(fle, "r") as f:
                 dict_list = cls.from_json_string(f.read())
                 return [cls.create(**d) for d in dict_list]
         except FileNotFoundError:

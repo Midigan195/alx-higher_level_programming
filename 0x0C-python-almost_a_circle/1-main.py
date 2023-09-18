@@ -4,7 +4,7 @@ from models.rectangle import Rectangle
 
 if __name__ == "__main__":
 
-    r1 = Rectangle(10, 2)
+    r1 = Rectangle()
     print(r1.id)
 
     r2 = Rectangle(2, 10)
