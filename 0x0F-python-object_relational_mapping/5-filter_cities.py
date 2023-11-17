@@ -27,9 +27,8 @@ if __name__ == "__main__":
 
     rows = cursor.fetchall()
 
-    if rows:
-        result = ', '.join(row[0] for row in rows if row[1] == st_name)
-        print(result)
+    result = ', '.join(row[0] for row in rows if row[1] == st_name)
+    print(result)
 
     cursor.close()
     db.close()
