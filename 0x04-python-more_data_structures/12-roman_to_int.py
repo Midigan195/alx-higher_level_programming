@@ -7,10 +7,12 @@ def roman_to_int(roman_string):
     roman_integer = 0
     for i in range(len(roman_string)):
         if roman_string[i] in num:
+            print("is in")
             if i + 1 < len(rom) and num[rom[i]] < num[rom[i + 1]]:
                 roman_integer -= num[roman_string[i]]
             else:
                 roman_integer += num[roman_string[i]]
         else:
+            print("Not in")
             return None
     return roman_integer
