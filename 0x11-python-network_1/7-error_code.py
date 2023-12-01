@@ -3,7 +3,6 @@
 This script prints the error code of url
 """
 import requests
-import urllib.error
 import sys
 
 
